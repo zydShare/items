@@ -16,6 +16,12 @@ img {
   border-radius: 2px;
 }
 
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 .hide {
   display: none;
 }
@@ -193,7 +199,7 @@ input {
   padding: 0 5px;
   font-weight: 800;
 }
-.main-nav-location .second-tab{
+.main-nav-location .second-tab {
   color: #0068b7;
 }
 
@@ -211,18 +217,17 @@ input {
 .main-nav > .main-nav-main li {
   padding: 0;
   margin: 0 15px;
-  color:#212121;
-  font-weight:800;
-  
+  color: #212121;
+  font-weight: 800;
 }
-.main-nav > .main-nav-main .layui-this{
-    color:#212121;
-    font-weight:800;
+.main-nav > .main-nav-main .layui-this {
+  color: #212121;
+  font-weight: 800;
 }
 .main-nav > .main-nav-main .layui-this::after {
   height: 79px;
   line-height: 79px;
-  border-color:#086db9
+  border-color: #086db9;
 }
 
 .main-main {

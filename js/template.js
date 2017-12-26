@@ -84,3 +84,10 @@ layui.use('laypage', function () {
         layout: ['count', 'prev', 'page', 'next']
     });
 });
+
+
+$(".footerContent img").click(function(){
+    console.log($(this).index())
+    $(this).removeClass("fr").addClass("fl");
+    $(this).siblings().removeClass("fl").addClass("fr");
+})
