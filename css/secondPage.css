@@ -298,15 +298,31 @@
 }
 
 .MVA-content.carousel-content .carousel.carousel-4 .img-list {
+	overflow: hidden;
     margin-top: 17px;
 }
 
 .MVA-content.carousel-content .carousel.carousel-4 .img-list .img-item {
     margin-right: 7px;
     margin-bottom: 7px;
-    display: inline-block;
+
     width: 247px;
     height: 217px;
+    background-color: #f4f1ec;
+    float: left;
+}
+.MVA-content.carousel-content .carousel.carousel-4 .img-list .img-item img{
+	width: 222px;
+	height: 155px;
+	display: inline-block;
+	margin:17px 12.5px;
+}
+.MVA-content.carousel-content .carousel.carousel-4 .img-list .img-item p{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #212121;
+	font-size: 12px;
+	
 }
 
 .MVA-content.carousel-content .carousel.carousel-4 .img-list .img-item.none-right {
