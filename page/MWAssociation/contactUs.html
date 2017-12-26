@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="template/layui/css/layui.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/sixPage.css" />
-    <!--<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <link rel="stylesheet" href="../../js/templates/MWAssociation/layui/css/layui.css">
+    <link rel="stylesheet" href="../../style/pc/style.css">
+    <link rel="stylesheet" href="../../style/pc/flex.css">
+    <link rel="stylesheet" type="text/css" href="../../style/pc/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/pc/sixPage.css" />
+    <!--<script src="../../js/templates/MWAssociation/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>-->
     <title>协会概况</title>
 </head>
 
 <body>
-    <script src="js/header.js"></script>
+    <script src="../../js/templates/MWAssociation/header.js"></script>
     <div class="MVA-z-main" id="main">
-        <img class="MVA-head" src="img/bgcontact.jpg" />
+        <img class="MVA-head" src="../../images/templates/MWAssociation/bgcontact.jpg" />
         <div class="MVA-choose">
             <div class="MVA-choose-main">
                 <div class="MVA-choose-left">
-                    <img src="img/page2_0.jpg" /><span class="parent-title">联系我们</span>
+                    <img src="../../images/templates/MWAssociation/page2_0.jpg" />
+                    <span class="parent-title">联系我们</span>
                 </div>
             </div>
         </div>
@@ -33,8 +34,12 @@
                 <p class="content-text">邮 箱：8888888888@163.com</p>
                 <p class="content-text">公司主页：www.888888.com</p>
 
-                <img class="icon-line" src="./img/icon_line.png" alt="" />
-                <span class="asset-btn">我要留言</span>
+                <img class="icon-line" src="../../images/templates/MWAssociation/icon_line.png" alt="" />
+                <div class="flex-hc-vc">
+                    <img class="icon-qq" src="../../images/templates/MWAssociation/QQ.png" alt="" />
+                    <span class="asset-btn">我要留言</span>
+
+                </div>
                 <textarea class="asset-content"></textarea>
             </div>
             <div id="contentMap" class="content content-right left">
@@ -44,9 +49,10 @@
             <div class="content-form">
                 <div class="form-head">
                     <div class="head-left">
-                        <img class="icon-edit" src="img/icon_edit.png" alt="" /><span class="text">客服留言</span>
+                        <img class="icon-edit" src="../../images/templates/MWAssociation/icon_edit.png" alt="" />
+                        <span class="text">客服留言</span>
                     </div>
-                    <img class="icon-close" src="img/icon_close.png" alt="" />
+                    <img class="icon-close" src="../../images/templates/MWAssociation/icon_close.png" alt="" />
                 </div>
                 <div class="form-body">
                     <div class="body-list">
@@ -79,16 +85,16 @@
             </div>
         </div>
     </div>
-    <script src="js/footer.js"></script>
+    <script src="../../js/templates/MWAssociation/footer.js"></script>
 </body>
-<script src="js/jquery.min.js "></script>
-<script src="template/layui/layui.js "></script>
-<script src="js/template.js"></script>
+<script src="../../js/templates/MWAssociation/jquery.min.js "></script>
+<script src="../../js/templates/MWAssociation/layui/layui.js "></script>
+<script src="../../js/templates/MWAssociation/template.js"></script>
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="./js/secondPage.js"></script>
+<script src="../../js/templates/MWAssociation/secondPage.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yml0co7z0YZUV3hbKDI8wyTwIyKoFaFZ"></script>
 <script>
-    $(function() {
+    $(function () {
         var map = new BMap.Map("contentMap"); // 创建Map实例
         var point = new BMap.Point(116.404, 39.915)
         map.centerAndZoom(point, 11); // 初始化

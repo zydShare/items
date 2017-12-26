@@ -97,7 +97,7 @@ input {
 }
 
 .header-content .search input {
-  background: url(../img/ic-zoom.png) no-repeat 10px center;
+  background: url(../../images/templates/MWAssociation/ic-zoom.png) no-repeat 10px center;
   padding-left: 40px;
   background-size: 24px 24px;
   height: 30px;

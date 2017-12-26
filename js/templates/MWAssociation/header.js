@@ -1,4 +1,4 @@
-document.write('<section id="header"><div class="header-content flex-hb-vc"> <div class="logo flex-hc-vc"> <img src="img/logo.png" alt=""> </div>' +
+document.write('<section id="header"><div class="header-content flex-hb-vc"> <div class="logo flex-hc-vc"> <img src="../../images/templates/MWAssociation/logo.png" alt=""> </div>' +
     '<div class="header-nav layui-tab layui-tab-card flex-hc-vc"> <ul class="header-nav-main layui-tab-title flex-hc-vc"> ' +
     '<li id="index">首  页</li> ' +
     '<li id="associationAbout">协会概况</li> ' +
