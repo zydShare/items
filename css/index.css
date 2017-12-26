@@ -61,7 +61,9 @@
  .index-content-right .index-content-right-title li.layui-this:after {
      border-bottom-color: #E62b1e
  }
- 
+ .newP{
+ 	font-size: 12px;
+ }
  .index-footer {
      width: 100%;
      max-width: 1600px;
@@ -72,5 +74,6 @@
  
  .index-footer .footerContent {
      height: 166px;
+     width: 1140px;
      margin: 0 auto;
  }
