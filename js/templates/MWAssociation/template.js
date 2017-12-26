@@ -1,93 +1,133 @@
-'use strict';
+"use strict";
 // 渲染模版
 
-layui.use('laytpl', function () {
-    // var laytpl = layui.laytpl;
-    // var header_data = { //数据
-    //     "title": "Layui常用模块",
-    //     "list": [{ "modname": "弹层", "alias": "layer", "site": "layer.layui.com" }, { "modname": "表单", "alias": "form" }]
-    // };
-    // var footer_data = { //数据
-    //     "title": "Layui常用模块",
-    //     "list": [{ "modname": "弹层", "alias": "layer", "site": "layer.layui.com" }, { "modname": "表单", "alias": "form" }]
-    // };
-    // var header_ = header_el.innerHTML,
-    //     footer_ = footer_el.innerHTML,
-    //     header = document.getElementById('header'),
-    //     footer = document.getElementById('footer');
-    // laytpl(header_).render(header_data, function (html) {
-    //     header.innerHTML = html;
-    // });
-    // laytpl(footer_).render(footer_data, function (html) {
-    //     footer.innerHTML = html;
-    // });
+layui.use("laytpl", function() {
+  // var laytpl = layui.laytpl;
+  // var header_data = { //数据
+  //     "title": "Layui常用模块",
+  //     "list": [{ "modname": "弹层", "alias": "layer", "site": "layer.layui.com" }, { "modname": "表单", "alias": "form" }]
+  // };
+  // var footer_data = { //数据
+  //     "title": "Layui常用模块",
+  //     "list": [{ "modname": "弹层", "alias": "layer", "site": "layer.layui.com" }, { "modname": "表单", "alias": "form" }]
+  // };
+  // var header_ = header_el.innerHTML,
+  //     footer_ = footer_el.innerHTML,
+  //     header = document.getElementById('header'),
+  //     footer = document.getElementById('footer');
+  // laytpl(header_).render(header_data, function (html) {
+  //     header.innerHTML = html;
+  // });
+  // laytpl(footer_).render(footer_data, function (html) {
+  //     footer.innerHTML = html;
+  // });
 });
 
-layui.use('element', function () {
-    var element = layui.element;
+layui.use("element", function() {
+  var element = layui.element;
 
-    var localName = location.pathname;
-    localName = localName.substr(localName.lastIndexOf("/") + 1);
-    localName = localName.split(/\./)[0];
-    $('#' + localName).addClass("layui-this");
-    $('#' + localName).siblings().removeClass("layui-this");
-    $(".header-nav-main li").click(function () {
-        var turn_html = $(this).attr("id");
-        window.location.href = turn_html + '.html';
-    });
+  var localName = location.pathname;
+  localName = localName.substr(localName.lastIndexOf("/") + 1);
+  localName = localName.split(/\./)[0];
+  $("#" + localName).addClass("layui-this");
+  $("#" + localName)
+    .siblings()
+    .removeClass("layui-this");
+  $(".header-nav-main li").click(function() {
+    var turn_html = $(this).attr("id");
+    window.location.href = turn_html + ".html";
+  });
 
-    element.tab({
-        headerElem: '#tabHeader>li', //指定tab头元素项
-        bodyElem: '#tabBody>li' //指定tab主体元素项
-    });
+  element.tab({
+    headerElem: "#tabHeader>li", //指定tab头元素项
+    bodyElem: "#tabBody>li" //指定tab主体元素项
+  });
 
-    element.on('tab(main-tab)', function(data){
-        console.log(this); //当前Tab标题所在的原始DOM元素
-        console.log(data.index); //得到当前Tab的所在下标
-        console.log(data.elem); //得到当前的Tab大容器
-        var $dd = $(this);
-        console.log($dd.text())
-        $(".main-nav-location span:eq(1)").text($dd.text())
-      });
+  element.on("tab(main-tab)", function(data) {
+    console.log(this); //当前Tab标题所在的原始DOM元素
+    console.log(data.index); //得到当前Tab的所在下标
+    console.log(data.elem); //得到当前的Tab大容器
+    var $dd = $(this);
+    console.log($dd.text());
+    $(".main-nav-location span:eq(1)").text($dd.text());
+  });
 
-    $(".main-content-top").click(function () {
-        $(".main-content-more").addClass("show");
-        $(".main-content-less").removeClass("show").addClass("hide");
-    });
+  $(".main-content-top").click(function() {
+    $(".main-content-more").addClass("show");
+    $(".main-content-less")
+      .removeClass("show")
+      .addClass("hide");
+  });
 
-    $(".main-content-bottom-item").click(function () {
-        $(".main-content-more").addClass("show");
-        $(".main-content-less").removeClass("show").addClass("hide");
-    });
+  $(".main-content-bottom-item").click(function() {
+    $(".main-content-more").addClass("show");
+    $(".main-content-less")
+      .removeClass("show")
+      .addClass("hide");
+  });
 
-    $(".main-content-pic-item").click(function () {
-        $(".main-content-more").addClass("show");
-        $(".main-content-less").removeClass("show").addClass("hide");
-        $(".main-ad").removeClass("hide").addClass("show");
-    });
+  $(".main-content-pic-item").click(function() {
+    $(".main-content-more").addClass("show");
+    $(".main-content-less")
+      .removeClass("show")
+      .addClass("hide");
+    $(".main-ad")
+      .removeClass("hide")
+      .addClass("show");
+  });
 });
 
-layui.use('laypage', function () {
-    var laypage = layui.laypage;
+layui.use("laypage", function() {
+  var laypage = layui.laypage;
 
-    //执行一个laypage实例
-    laypage.render({
-        elem: 'lay-page',
-        count: 40,
-        limit: 20,
-        layout: ['count', 'prev', 'page', 'next']
-    });
-    laypage.render({
-        elem: 'lay-page-2',
-        count: 40,
-        limit: 20,
-        layout: ['count', 'prev', 'page', 'next']
-    });
+  //执行一个laypage实例
+  laypage.render({
+    elem: "lay-page",
+    count: 40,
+    limit: 20,
+    layout: ["count", "prev", "page", "next"]
+  });
+  laypage.render({
+    elem: "lay-page-2",
+    count: 40,
+    limit: 20,
+    layout: ["count", "prev", "page", "next"]
+  });
 });
 
-
-$(".footerContent img").click(function(){
-    console.log($(this).index())
-    $(this).removeClass("fr").addClass("fl");
-    $(this).siblings().removeClass("fl").addClass("fr");
+$(function(){
+  $(".footerContent img").off("mouseout").on("mouseout",function(){
+    var str=$(this).attr("class");
+    console.log(str)
+    $(this).removeAttr("class").attr("class","ml-0")
+//          
+    var len=$(this).siblings();
+      
+    
+    if(str!="ml-0" && str!="ml-3"){
+      for(var i=0;i<len.length;i++){
+        var lenAttr=$(len[i]).attr("class");
+        
+        var splitL=lenAttr.split("-")[1];
+        console.log(splitL)
+        console.log("=================")
+        if(parseInt(splitL) -1<0){
+          splitL=4;
+        }
+        if(parseInt(splitL) -1==0){
+          splitL=2;
+        }
+        $(len[i]).removeAttr("class").attr("class",lenAttr.split("-")[0]+"-"+(parseInt(splitL)-1))
+      }  
+    }else if(str=="ml-3"){
+    console.log("+++++++++++++++++++++")
+    var father=$(".footerContent").find("img");
+      $(father[0]).removeAttr("class").attr("class","ml-0");
+        $(father[1]).removeAttr("class").attr("class","ml-1");
+        $(father[2]).removeAttr("class").attr("class","ml-2");
+        $(father[3]).removeAttr("class").attr("class","ml-3");
+      
+    }
+  })
 })
+

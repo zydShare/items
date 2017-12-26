@@ -1,76 +1,101 @@
- #myCarousel {
-     width: 100%;
-     max-width: 1600px;
-     height: 436px;
-     margin: 0 auto;
- }
- 
- #myCarousel .item img {
-     width: 100%;
-     max-width: 1600px;
-     height: 436px;
- }
- 
- .carousel-control img {
-     position: absolute;
-     width: 60px;
-     height: 60px;
-     left: 50%;
-     margin-left: -25px;
-     top: 50%;
-     margin-top: -25px;
-     display: inline-block;
- }
- 
- .index-content {
-     width: 1200px;
-     height: 150px;
-     margin: 0 auto;
- }
- 
- .index-content-left {
-     width: 506px;
-     float: left;
- }
- 
- .index-content-left .ptitle {
-     font-size: 16px;
-     font-family: "微软雅黑";
-     padding: 12px 0 10px 0;
- }
- 
- .index-content-left .pcontent {
-     font-size: 13px;
-     line-height: 20px;
- }
- 
- .index-content-right {
-     width: 440px;
-     float: right;
- }
- 
- .index-content-right .index-content-right-content div {
-     font-size: 13px;
-     line-height: 2
- }
- 
- .index-content-right .index-content-right-title li.layui-this {
-     color: #000;
- }
- 
- .index-content-right .index-content-right-title li.layui-this:after {
-     border-bottom-color: #E62b1e
- }
- .newP{
- 	font-size: 12px;
- }
- .index-footer {
-     width: 100%;
-     max-width: 1600px;
-     height: 166px;
-     background-color: #e0e2e4;
- }
- 
- .index-footer .footerContent {
-     height: 166px;
- }
+#myCarousel {
+  width: 100%;
+  max-width: 1600px;
+  height: 436px;
+  margin: 0 auto;
+}
+
+#myCarousel .item img {
+  width: 100%;
+  max-width: 1600px;
+  height: 436px;
+}
+
+.carousel-control img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px;
+  display: inline-block;
+}
+
+.index-content {
+  width: 1140px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.index-content-left {
+  width: 506px;
+  float: left;
+}
+
+.index-content-left .ptitle {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  padding: 12px 0 10px 0;
+}
+
+.index-content-left .pcontent {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.index-content-right {
+  width: 440px;
+  float: right;
+}
+
+.index-content-right .index-content-right-content div {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.index-content-right .index-content-right-title li.layui-this {
+  color: #000;
+}
+
+.index-content-right .index-content-right-title li.layui-this:after {
+  border-bottom-color: #e62b1e;
+}
+.newP {
+  font-size: 12px;
+}
+.index-footer {
+  width: 100%;
+  max-width: 1600px;
+  height: 166px;
+  background-color: #e0e2e4;
+}
+
+.index-footer .footerContent {
+  height: 166px;
+  width: 1140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.footerContent img {
+  position: absolute;
+  width: 490px;
+  height: 166px;
+}
+
+.ml-0 {
+  z-index: 100;
+}
+.ml-1 {
+  z-index: 200;
+  margin-left: 245px;
+}
+.ml-2 {
+  z-index: 300;
+  margin-left: 490px;
+}
+.ml-3 {
+  z-index: 400;
+  margin-left: 735px;
+}

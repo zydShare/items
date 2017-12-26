@@ -395,6 +395,7 @@
 .conten-myCarousel-right {
     width: 320px;
     float: left;
+    padding-top:15px;
 }
 
 .conten-myCarousel-right img {
