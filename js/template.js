@@ -41,6 +41,15 @@ layui.use('element', function () {
         bodyElem: '#tabBody>li' //指定tab主体元素项
     });
 
+    element.on('tab(main-tab)', function(data){
+        console.log(this); //当前Tab标题所在的原始DOM元素
+        console.log(data.index); //得到当前Tab的所在下标
+        console.log(data.elem); //得到当前的Tab大容器
+        var $dd = $(this);
+        console.log($dd.text())
+        $(".main-nav-location span:eq(1)").text($dd.text())
+      });
+
     $(".main-content-top").click(function () {
         $(".main-content-more").addClass("show");
         $(".main-content-less").removeClass("show").addClass("hide");
@@ -64,6 +73,12 @@ layui.use('laypage', function () {
     //执行一个laypage实例
     laypage.render({
         elem: 'lay-page',
+        count: 40,
+        limit: 20,
+        layout: ['count', 'prev', 'page', 'next']
+    });
+    laypage.render({
+        elem: 'lay-page-2',
         count: 40,
         limit: 20,
         layout: ['count', 'prev', 'page', 'next']

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-
     </style>
 </head>
 
@@ -27,9 +26,9 @@
                     <img src="img/ic-home.png" alt="">
                     <span class="flex-hb-vc">会员中心</span>
                     <img src="img/ic-arrow-right.png" alt="">
-                    <span>单位会员</span>
+                    <span class="second-tab">单位会员</span>
                 </div>
-                <ul class="main-nav-main layui-tab-title" id="tabHeader">
+                <ul class="main-nav-main layui-tab-title" id="tabHeader" lay-filter="main-tab">
                     <li>个人会员</li>
                     <li class="layui-this">单位会员</li>
                 </ul>
@@ -37,8 +36,7 @@
         </div>
 
         <ul class="main-main layui-tab-content" id="tabBody">
-            <li class="layui-tab-item">1</li>
-            <li class="main-item layui-tab-item layui-show">
+            <li class="layui-tab-item">
                 <div class="flex-hc-vl">
                     <div class="main-content-2 main-content-less show">
                         <ul class="main-content-pic flex flex-hw">
@@ -78,7 +76,9 @@
                     <div class="main-content main-content-more hide ">
                         <div class="main-content-top-2 ">
                             <div class="main-content-new flex-hl-vl ">
-                                <div class="main-content-new-pic flex-hc-vc"><img src="img/pic-5.png" alt=""></div>
+                                <div class="main-content-new-pic flex-hc-vc">
+                                    <img src="img/pic-5.png" alt="">
+                                </div>
 
                                 <div class="main-content-new-main ">
                                     <div class="new-title font-s ">协会2017中期报告 : 推动西藏矿泉水业务</div>
@@ -89,9 +89,111 @@
                                         <img src="img/weibo.png " alt=" ">
                                         <img src="img/wechat.png " alt=" ">
                                     </div>
-                                    <div class="new-content ">协会性质：本协会是西藏达氏集团有限责任公司发起和成立的行业协会，由西藏特色产业股份有限公司、科研院所、西藏矿泉水厂商、农村经济组织和有关部门组成的非营利性社会团体组织。 第二条 协会宗旨：在科学发展观的指引下，以我区得天独厚的矿泉水资源为依托，瞄准国内外高端市场，依靠科技进步和现代加工技术，大力开发和生产出无污染、高品质的矿泉水系列产品。保护生态资源、合理开发利用，以矿泉水产业促进西藏农村经济多元化发展，带动农民增收致富，为我区经济跨越发展做贡献，为边远贫困县的社会主义新农村建设办实事。
-                                        （二）经理事会调查核实并讨论通过； （三）由理事会或理事会授权的协会办公室正式发给会员证。 第十条 会员享有下列权利； （一）由选举权、被选举权和表决权； （二）参加协会的活动； （三）优先获得协会服务和产业发展信息； （四）有对协会工作提出批评建议、督促检查的权利； （五）有对协会工作、产业发展提出建议和参与的权力； （六）入会自愿、退会自由。 第十一条 会员履行下列义务： （一）遵守章程、执行协会决议； （二）维护协会的合法权益；
-                                        （三）完成协会分配的工作； （四）定期按时缴纳会费； （五）及时向协会通报各自会员的与协会相关工作情况，并提供有关资料。 第十二条 会员退会须提出书面申请，并交回协会会员证及相关资料。会员在一年内无故不缴纳会费或不参加协会活动的视为自动退会；<img src="img/pic-4.png " alt=" ">
+                                    <div class="new-content ">协会性质：本协会是西藏达氏集团有限责任公司发起和成立的行业协会，由西藏特色产业股份有限公司、科研院所、西藏矿泉水厂商、农村经济组织和有关部门组成的非营利性社会团体组织。
+                                        第二条 协会宗旨：在科学发展观的指引下，以我区得天独厚的矿泉水资源为依托，瞄准国内外高端市场，依靠科技进步和现代加工技术，大力开发和生产出无污染、高品质的矿泉水系列产品。保护生态资源、合理开发利用，以矿泉水产业促进西藏农村经济多元化发展，带动农民增收致富，为我区经济跨越发展做贡献，为边远贫困县的社会主义新农村建设办实事。
+                                        （二）经理事会调查核实并讨论通过； （三）由理事会或理事会授权的协会办公室正式发给会员证。 第十条 会员享有下列权利； （一）由选举权、被选举权和表决权； （二）参加协会的活动；
+                                        （三）优先获得协会服务和产业发展信息； （四）有对协会工作提出批评建议、督促检查的权利； （五）有对协会工作、产业发展提出建议和参与的权力； （六）入会自愿、退会自由。
+                                        第十一条 会员履行下列义务： （一）遵守章程、执行协会决议； （二）维护协会的合法权益； （三）完成协会分配的工作； （四）定期按时缴纳会费； （五）及时向协会通报各自会员的与协会相关工作情况，并提供有关资料。
+                                        第十二条 会员退会须提出书面申请，并交回协会会员证及相关资料。会员在一年内无故不缴纳会费或不参加协会活动的视为自动退会；
+                                        <img src="img/pic-4.png "
+                                            alt=" ">
+                                    </div>
+                                    <div class="new-more col-009 flex-hr-vc">官网查看更多》</div>
+                                </div>
+
+                            </div>
+                            <div class="main-content-turn flex-hc-vc ">
+                                <a>会员中心</a>
+                                <a>上一篇</a>
+                                <a>下一篇</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-ad flex-v flex-hc-vc hide">
+                        <img src="img/pic-common-1.png" alt="">
+                        <img src="img/pic-common-2.png" alt="">
+                        <img src="img/pic-common-3.png" alt="">
+                    </div>
+
+                </div>
+            </li>
+            <li class="main-item layui-tab-item layui-show">
+                <div class="flex-hc-vl">
+                    <div class="main-content-2 main-content-less show">
+                        <ul class="main-content-pic flex flex-hw">
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li> <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li> <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li> <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li> <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                        </ul>
+                        <div id="lay-page-2" class="flex-hc-vc "></div>
+
+                    </div>
+
+                    <div class="main-content main-content-more hide ">
+                        <div class="main-content-top-2 ">
+                            <div class="main-content-new flex-hl-vl ">
+                                <div class="main-content-new-pic flex-hc-vc">
+                                    <img src="img/pic-5.png" alt="">
+                                </div>
+
+                                <div class="main-content-new-main ">
+                                    <div class="new-title font-s ">协会2017中期报告 : 推动西藏矿泉水业务</div>
+                                    <div class="new-msg ">发布者: 西藏自治区矿泉水协会 浏览刺水: 2890</div>
+                                    <div class="new-share ">
+                                        <img src="img/weibo.png " alt=" ">
+                                        <img src="img/wechat.png " alt=" ">
+                                        <img src="img/weibo.png " alt=" ">
+                                        <img src="img/wechat.png " alt=" ">
+                                    </div>
+                                    <div class="new-content ">协会性质：本协会是西藏达氏集团有限责任公司发起和成立的行业协会，由西藏特色产业股份有限公司、科研院所、西藏矿泉水厂商、农村经济组织和有关部门组成的非营利性社会团体组织。
+                                        第二条 协会宗旨：在科学发展观的指引下，以我区得天独厚的矿泉水资源为依托，瞄准国内外高端市场，依靠科技进步和现代加工技术，大力开发和生产出无污染、高品质的矿泉水系列产品。保护生态资源、合理开发利用，以矿泉水产业促进西藏农村经济多元化发展，带动农民增收致富，为我区经济跨越发展做贡献，为边远贫困县的社会主义新农村建设办实事。
+                                        （二）经理事会调查核实并讨论通过； （三）由理事会或理事会授权的协会办公室正式发给会员证。 第十条 会员享有下列权利； （一）由选举权、被选举权和表决权； （二）参加协会的活动；
+                                        （三）优先获得协会服务和产业发展信息； （四）有对协会工作提出批评建议、督促检查的权利； （五）有对协会工作、产业发展提出建议和参与的权力； （六）入会自愿、退会自由。
+                                        第十一条 会员履行下列义务： （一）遵守章程、执行协会决议； （二）维护协会的合法权益； （三）完成协会分配的工作； （四）定期按时缴纳会费； （五）及时向协会通报各自会员的与协会相关工作情况，并提供有关资料。
+                                        第十二条 会员退会须提出书面申请，并交回协会会员证及相关资料。会员在一年内无故不缴纳会费或不参加协会活动的视为自动退会；
+                                        <img src="img/pic-4.png "
+                                            alt=" ">
                                     </div>
                                     <div class="new-more col-009 flex-hr-vc">官网查看更多》</div>
                                 </div>
@@ -114,7 +216,87 @@
 
             </li>
 
-            <li class="layui-tab-item ">3</li>
+            <li class="layui-tab-item ">
+                <div class="flex-hc-vl">
+                    <div class="main-content-2 main-content-less show">
+                        <ul class="main-content-pic flex flex-hw">
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                            <li class="main-content-pic-item flex-v flex-hc-vc">
+                                <img class="pic-item-pic" src=" img/pic-5.png " alt=" ">
+                                <p class="pic-item-name ">西藏珠峰冰川矿泉水资源开发有限公司</p>
+                            </li>
+                        </ul>
+                        <div id="lay-page" class="flex-hc-vc "></div>
+
+                    </div>
+
+                    <div class="main-content main-content-more hide ">
+                        <div class="main-content-top-2 ">
+                            <div class="main-content-new flex-hl-vl ">
+                                <div class="main-content-new-pic flex-hc-vc">
+                                    <img src="img/pic-5.png" alt="">
+                                </div>
+
+                                <div class="main-content-new-main ">
+                                    <div class="new-title font-s ">协会2017中期报告 : 推动西藏矿泉水业务</div>
+                                    <div class="new-msg ">发布者: 西藏自治区矿泉水协会 浏览刺水: 2890</div>
+                                    <div class="new-share ">
+                                        <img src="img/weibo.png " alt=" ">
+                                        <img src="img/wechat.png " alt=" ">
+                                        <img src="img/weibo.png " alt=" ">
+                                        <img src="img/wechat.png " alt=" ">
+                                    </div>
+                                    <div class="new-content ">协会性质：本协会是西藏达氏集团有限责任公司发起和成立的行业协会，由西藏特色产业股份有限公司、科研院所、西藏矿泉水厂商、农村经济组织和有关部门组成的非营利性社会团体组织。
+                                        第二条 协会宗旨：在科学发展观的指引下，以我区得天独厚的矿泉水资源为依托，瞄准国内外高端市场，依靠科技进步和现代加工技术，大力开发和生产出无污染、高品质的矿泉水系列产品。保护生态资源、合理开发利用，以矿泉水产业促进西藏农村经济多元化发展，带动农民增收致富，为我区经济跨越发展做贡献，为边远贫困县的社会主义新农村建设办实事。
+                                        （二）经理事会调查核实并讨论通过； （三）由理事会或理事会授权的协会办公室正式发给会员证。 第十条 会员享有下列权利； （一）由选举权、被选举权和表决权； （二）参加协会的活动；
+                                        （三）优先获得协会服务和产业发展信息； （四）有对协会工作提出批评建议、督促检查的权利； （五）有对协会工作、产业发展提出建议和参与的权力； （六）入会自愿、退会自由。
+                                        第十一条 会员履行下列义务： （一）遵守章程、执行协会决议； （二）维护协会的合法权益； （三）完成协会分配的工作； （四）定期按时缴纳会费； （五）及时向协会通报各自会员的与协会相关工作情况，并提供有关资料。
+                                        第十二条 会员退会须提出书面申请，并交回协会会员证及相关资料。会员在一年内无故不缴纳会费或不参加协会活动的视为自动退会；
+                                        <img src="img/pic-4.png "
+                                            alt=" ">
+                                    </div>
+                                    <div class="new-more col-009 flex-hr-vc">官网查看更多》</div>
+                                </div>
+
+                            </div>
+                            <div class="main-content-turn flex-hc-vc ">
+                                <a>会员中心</a>
+                                <a>上一篇</a>
+                                <a>下一篇</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-ad flex-v flex-hc-vc hide">
+                        <img src="img/pic-common-1.png" alt="">
+                        <img src="img/pic-common-2.png" alt="">
+                        <img src="img/pic-common-3.png" alt="">
+                    </div>
+
+                </div>
+            </li>
         </ul>
     </section>
     <script src="js/footer.js"></script>
